@@ -45,15 +45,9 @@
 
   <!-- Hero / Showreel -->
   <section class="hero" id="top">
-    <div class="hero__video-wrap">
-      <video class="hero__video" autoplay muted loop playsinline poster="assets/art/shoreline.jpg">
-        <source src="assets/media/showreel.mp4" type="video/mp4" />
-      </video>
-      <div class="hero__scrim"></div>
-      <div class="hero__grain"></div>
-    </div>
+    <img src="assets/brand/patterns.png" alt="" class="hero__pattern" aria-hidden="true" />
 
-    <div class="hero__content">
+    <div class="container hero__head">
       <span class="hero__eyebrow">Digital Art Studio &middot; Showreel 2026</span>
       <img src="assets/brand/logo-mark.png" alt="Aspectrum" class="hero__logo" />
       <p class="hero__tag">Vision<span>.</span>Visualize<span>.</span>Create<span>.</span></p>
@@ -64,10 +58,18 @@
       </div>
     </div>
 
-    <a href="#about" class="hero__scroll" aria-label="Scroll down">
-      <span class="hero__scroll-dot"></span>
-      <span class="hero__scroll-label">Scroll</span>
-    </a>
+    <div class="container hero__reel">
+      <div class="reel-frame">
+        <video id="showreel" class="reel-frame__video" autoplay muted loop playsinline poster="assets/art/shoreline.jpg">
+          <source src="assets/media/showreel.mp4" type="video/mp4" />
+        </video>
+        <span class="reel-frame__badge">▶ Showreel</span>
+        <button class="reel-frame__mute" id="reelMute" aria-label="Unmute showreel" aria-pressed="false">
+          <span class="reel-frame__mute-icon" aria-hidden="true">🔇</span>
+          <span class="reel-frame__mute-label">Unmute</span>
+        </button>
+      </div>
+    </div>
   </section>
 
   <!-- Marquee -->

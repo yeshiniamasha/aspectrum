@@ -172,6 +172,22 @@
     });
   }
 
+  /* ---- Showreel mute toggle ---- */
+  var reel = document.getElementById("showreel");
+  var reelMute = document.getElementById("reelMute");
+  if (reel && reelMute) {
+    var icon = reelMute.querySelector(".reel-frame__mute-icon");
+    var label = reelMute.querySelector(".reel-frame__mute-label");
+    reelMute.addEventListener("click", function () {
+      reel.muted = !reel.muted;
+      if (!reel.muted) { reel.play().catch(function () {}); }
+      reelMute.setAttribute("aria-pressed", String(!reel.muted));
+      reelMute.setAttribute("aria-label", reel.muted ? "Unmute showreel" : "Mute showreel");
+      if (icon) icon.textContent = reel.muted ? "🔇" : "🔊";
+      if (label) label.textContent = reel.muted ? "Unmute" : "Mute";
+    });
+  }
+
   /* ---- Footer year ---- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
