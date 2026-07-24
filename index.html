@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aspectrum — Vision. Visualize. Create.</title>
+  <meta name="description" content="Aspectrum is the digital art portfolio of Yeshini Amasha — immersive landscape and background artwork, plus expressive portrait studies created through digital painting." />
+  <meta name="theme-color" content="#b15c36" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aspectrum — Yeshini Amasha" />
+  <meta property="og:description" content="Immersive digital artwork that transforms ideas into meaningful visual experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/art/shoreline.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/brand/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Aspectrum home">
+        <img src="assets/brand/logo-mark.png" alt="Aspectrum" class="nav__logo" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#featured">Featured</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero / Showreel -->
+  <section class="hero" id="top">
+    <div class="hero__video-wrap">
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/art/shoreline.jpg">
+        <source src="assets/media/showreel.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__scrim"></div>
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="hero__content">
+      <span class="hero__eyebrow">Digital Art Studio &middot; Showreel 2026</span>
+      <img src="assets/brand/logo-mark.png" alt="Aspectrum" class="hero__logo" />
+      <p class="hero__tag">Vision<span>.</span>Visualize<span>.</span>Create<span>.</span></p>
+      <p class="hero__lede">Imaginative digital artwork that transforms ideas into meaningful visual experiences.</p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--solid">View Portfolio</a>
+        <a href="#contact" class="btn btn--ghost">Work With Me</a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span class="hero__scroll-dot"></span>
+      <span class="hero__scroll-label">Scroll</span>
+    </a>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Landscape Art</span><span class="dot">&bull;</span>
+      <span>Background Design</span><span class="dot">&bull;</span>
+      <span>Portrait Studies</span><span class="dot">&bull;</span>
+      <span>Digital Painting</span><span class="dot">&bull;</span>
+      <span>Concept Scenes</span><span class="dot">&bull;</span>
+      <span>Landscape Art</span><span class="dot">&bull;</span>
+      <span>Background Design</span><span class="dot">&bull;</span>
+      <span>Portrait Studies</span><span class="dot">&bull;</span>
+      <span>Digital Painting</span><span class="dot">&bull;</span>
+      <span>Concept Scenes</span><span class="dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <img src="assets/brand/patterns.png" alt="" class="about__pattern" aria-hidden="true" />
+    <div class="container about__grid">
+      <div class="about__intro reveal">
+        <span class="section-kicker">About the Artist</span>
+        <h2 class="about__title">Hi, I'm <em>Yeshini&nbsp;Amasha</em>.</h2>
+      </div>
+      <div class="about__body reveal" data-delay="1">
+        <p>I'm a digital artist specializing in landscape and background artwork created through digital painting. My work focuses on building immersive visual scenes that bring imagination and atmosphere to life.</p>
+        <p>I also create portrait artworks as personal projects — a way to explore different artistic styles, strengthen my craft, and keep growing as a creative.</p>
+        <div class="about__stats">
+          <div class="stat"><span class="stat__num" data-count="120">0</span><span class="stat__label">Artworks</span></div>
+          <div class="stat"><span class="stat__num" data-count="45">0</span><span class="stat__label">Scenes Designed</span></div>
+          <div class="stat"><span class="stat__num" data-count="6">0</span><span class="stat__label">Years Painting</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">Selected Work</span>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-sub">A curated look at recent scenes and studies — each piece painted to carry its own mood and light.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab is-active" data-filter="all" role="tab">All</button>
+        <button class="tab" data-filter="landscape" role="tab">Landscape &amp; Backgrounds</button>
+        <button class="tab" data-filter="portrait" role="tab">Portrait Art</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <!-- Landscape / background art -->
+        <figure class="card card--wide" data-cat="landscape" data-full="assets/art/shoreline.jpg">
+          <div class="card__media"><img src="assets/art/shoreline.jpg" alt="Shoreline Serenity" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Shoreline Serenity</h3><p>A striated sky melting into a calm, retreating tide.</p><span class="card__tag">Landscape</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="landscape" data-full="assets/art/skyline.jpg">
+          <div class="card__media"><img src="assets/art/skyline.jpg" alt="Skyline Promenade" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Skyline Promenade</h3><p>A quiet city bridge under a soft teal dusk.</p><span class="card__tag">Background</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="landscape" data-full="assets/art/attic.jpg">
+          <div class="card__media"><img src="assets/art/attic.jpg" alt="The Artist's Attic" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>The Artist's Attic</h3><p>An easel by the window as autumn burns outside.</p><span class="card__tag">Interior</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="landscape" data-full="assets/art/kitchen.jpg">
+          <div class="card__media"><img src="assets/art/kitchen.jpg" alt="Sunlit Kitchen" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Sunlit Kitchen</h3><p>Playful mosaic tiles and a warm domestic hush.</p><span class="card__tag">Interior</span></figcaption>
+        </figure>
+
+        <figure class="card card--wide" data-cat="landscape" data-full="assets/art/cafe.jpg">
+          <div class="card__media"><img src="assets/art/cafe.jpg" alt="Crimson Café" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Crimson Café</h3><p>A leaf-draped corner cafe bathed in rose light.</p><span class="card__tag">Scene</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="landscape" data-full="assets/art/bedroom.jpg">
+          <div class="card__media"><img src="assets/art/bedroom.jpg" alt="Rosé Bedroom" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Rosé Bedroom</h3><p>Soft pinks and a shaft of afternoon sun.</p><span class="card__tag">Interior</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="landscape" data-full="assets/art/lamps.jpg">
+          <div class="card__media"><img src="assets/art/lamps.jpg" alt="Blooming Lights" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Blooming Lights</h3><p>Petal-shaped pendant lamps against warm ochre.</p><span class="card__tag">Study</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="landscape" data-full="assets/art/citrus.jpg">
+          <div class="card__media"><img src="assets/art/citrus.jpg" alt="Citrus Still Life" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Citrus Still Life</h3><p>Lemon branches on a bold striped stage.</p><span class="card__tag">Still Life</span></figcaption>
+        </figure>
+
+        <figure class="card card--wide" data-cat="landscape" data-full="assets/art/gardenwall.jpg">
+          <div class="card__media"><img src="assets/art/gardenwall.jpg" alt="Garden Wall" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Garden Wall</h3><p>Potted greenery lined along a sunlit brick ledge.</p><span class="card__tag">Background</span></figcaption>
+        </figure>
+
+        <!-- Portrait art -->
+        <figure class="card card--tall" data-cat="portrait" data-full="assets/portraits/rose.jpg">
+          <div class="card__media"><img src="assets/portraits/rose.jpg" alt="Roses & Ruin" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Roses &amp; Ruin</h3><p>A study in florals, poise and low-key light.</p><span class="card__tag">Portrait</span></figcaption>
+        </figure>
+
+        <figure class="card card--tall" data-cat="portrait" data-full="assets/portraits/contemplation.jpg">
+          <div class="card__media"><img src="assets/portraits/contemplation.jpg" alt="Contemplation" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Contemplation</h3><p>Skin tones and reflected warmth in close quarters.</p><span class="card__tag">Portrait</span></figcaption>
+        </figure>
+
+        <figure class="card card--tall" data-cat="portrait" data-full="assets/portraits/cat.jpg">
+          <div class="card__media"><img src="assets/portraits/cat.jpg" alt="Curious Eyes" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Curious Eyes</h3><p>An intimate feline portrait against pure black.</p><span class="card__tag">Portrait</span></figcaption>
+        </figure>
+
+        <figure class="card" data-cat="portrait" data-full="assets/portraits/ladybug.jpg">
+          <div class="card__media"><img src="assets/portraits/ladybug.jpg" alt="Lucky Charm" loading="lazy" /></div>
+          <figcaption class="card__cap"><h3>Lucky Charm</h3><p>A ladybird resting on a four-leaf clover.</p><span class="card__tag">Study</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <span class="section-kicker">Highlights</span>
+        <h2 class="section-title">Featured Artwork</h2>
+      </div>
+      <div class="featured__grid">
+        <a class="feat reveal" data-full="assets/art/shoreline.jpg" href="#" data-delay="0">
+          <img src="assets/art/shoreline.jpg" alt="Shoreline Serenity" loading="lazy" />
+          <div class="feat__label"><h3>Shoreline Serenity</h3><span>Landscape</span></div>
+        </a>
+        <a class="feat reveal" data-full="assets/art/cafe.jpg" href="#" data-delay="1">
+          <img src="assets/art/cafe.jpg" alt="Crimson Café" loading="lazy" />
+          <div class="feat__label"><h3>Crimson Café</h3><span>Scene</span></div>
+        </a>
+        <a class="feat reveal" data-full="assets/art/attic.jpg" href="#" data-delay="2">
+          <img src="assets/art/attic.jpg" alt="The Artist's Attic" loading="lazy" />
+          <div class="feat__label"><h3>The Artist's Attic</h3><span>Interior</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <img src="assets/brand/patterns.png" alt="" class="contact__pattern" aria-hidden="true" />
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <span class="section-kicker">Get In Touch</span>
+        <h2 class="section-title">Let's create something<br /><em>unforgettable.</em></h2>
+        <p class="contact__lede">Commissions, collaborations, or just a hello — I'd love to hear about your vision.</p>
+        <ul class="contact__links">
+          <li><span>Email</span><a href="mailto:amashayeshini@gmail.com">amashayeshini@gmail.com</a></li>
+          <li><span>Behance</span><a href="https://www.behance.net/" target="_blank" rel="noopener">Yeshini Amasha</a></li>
+          <li><span>Pinterest</span><a href="https://www.pinterest.com/" target="_blank" rel="noopener">A_spectrum_</a></li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" data-delay="1" id="contactForm" action="https://formsubmit.co/amashayeshini@gmail.com" method="POST">
+        <div class="field">
+          <input type="text" id="name" name="name" required placeholder=" " />
+          <label for="name">Name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" required placeholder=" " />
+          <label for="email">Email</label>
+        </div>
+        <div class="field">
+          <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn btn--solid btn--block">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/brand/logo-mark.png" alt="Aspectrum" class="footer__logo" />
+      <p class="footer__tag">Vision. Visualize. Create.</p>
+      <p class="footer__copy">© <span id="year"></span> Aspectrum — Yeshini Amasha. All artwork is original.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <img class="lightbox__img" id="lbImg" src="" alt="" />
+    <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
