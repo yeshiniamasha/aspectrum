@@ -23,8 +23,8 @@
   --shadow-lg: 0 36px 80px -30px rgba(60, 30, 12, .55);
   --ease: cubic-bezier(.22, 1, .36, 1);
 
-  --serif: "Fraunces", Georgia, serif;
-  --sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --serif: "Montserrat", system-ui, -apple-system, sans-serif;
+  --sans: "Montserrat", system-ui, -apple-system, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
