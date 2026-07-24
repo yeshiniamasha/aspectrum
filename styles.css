@@ -116,17 +116,17 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Hero / Showreel ---------- */
 .hero {
   position: relative; overflow: hidden; text-align: center;
-  padding: 128px 0 74px;
+  padding: 86px 0 46px;
   background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 58%, var(--sand) 100%);
 }
 .hero__pattern { position: absolute; top: -90px; right: -110px; width: 400px; opacity: .13; transform: rotate(10deg); pointer-events: none; }
 .hero__head { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
 .hero__eyebrow {
   color: var(--copper); font-weight: 700; font-size: .72rem;
-  letter-spacing: .3em; text-transform: uppercase; margin-bottom: 20px;
+  letter-spacing: .3em; text-transform: uppercase; margin-bottom: 10px;
   opacity: 0; animation: fadeUp .9s var(--ease) .1s forwards;
 }
-.hero__logo { width: min(440px, 74vw); height: auto; opacity: 0; animation: fadeUp 1s var(--ease) .22s forwards; }
+.hero__logo { width: min(300px, 56vw); height: auto; opacity: 0; animation: fadeUp 1s var(--ease) .22s forwards; }
 .hero__tag {
   font-family: var(--serif); font-weight: 500; color: var(--ink);
   font-size: clamp(1.05rem, 3vw, 1.7rem); letter-spacing: .04em;
@@ -135,11 +135,17 @@ a { color: inherit; text-decoration: none; }
 .hero__tag span { color: var(--copper); }
 .hero__lede {
   color: var(--muted); font-size: clamp(1rem, 1.3vw, 1.12rem);
-  max-width: 520px; margin: 18px 0 30px; opacity: 0; animation: fadeUp 1s var(--ease) .46s forwards;
+  max-width: 500px; margin: 12px 0 22px; opacity: 0; animation: fadeUp 1s var(--ease) .46s forwards;
 }
 .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; opacity: 0; animation: fadeUp 1s var(--ease) .58s forwards; }
 
-.hero__reel { position: relative; z-index: 2; margin-top: 48px; opacity: 0; animation: fadeUp 1.1s var(--ease) .66s forwards; }
+/* Reel is capped by the available viewport height so the whole 16:9 player
+   is visible on load; on narrow screens it simply goes full width. */
+.hero__reel {
+  position: relative; z-index: 2;
+  width: min(100% - 44px, 1040px, calc(48vh * 16 / 9));
+  margin: 22px auto 0; opacity: 0; animation: fadeUp 1.1s var(--ease) .66s forwards;
+}
 .reel-frame {
   position: relative; aspect-ratio: 16 / 9; border-radius: 24px; overflow: hidden;
   background: #120b06; box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,.55);
